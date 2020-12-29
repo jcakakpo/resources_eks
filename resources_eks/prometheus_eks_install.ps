@@ -62,3 +62,8 @@ prometheus-node-exporter-tjgd5                   1/1     Running   0          22
 prometheus-pushgateway-79dd67b5-b5mjz            1/1     Running   0          21s
 prometheus-server-5574d6697f-kf7vg               1/2     Running   0          21s
 PS C:\Users\Administrator>
+PS C:\Users\Administrator> kubectl --namespace=prometheus port-forward deploy/prometheus-server 9090
+Forwarding from 127.0.0.1:9090 -> 9090
+Forwarding from [::1]:9090 -> 9090
+
+#Note: from this point on, you can type in "localhost:9090" from your pc's browser to access the Prometheus console.
