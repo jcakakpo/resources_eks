@@ -67,3 +67,12 @@ prometheus    prometheus-node-exporter-bgcvr                   0/1     Pending  
 prometheus    prometheus-pushgateway-79dd67b5-sh44h            0/1     Pending   0          6m14s
 prometheus    prometheus-server-5574d6697f-7cnqn               2/2     Running   0          6m14s
 PS C:\Users\Administrator>
+PS C:\Users\Administrator> kubectl get pods -n prometheus
+NAME                                             READY   STATUS    RESTARTS   AGE
+prometheus-alertmanager-78d778c999-xd9td         1/2     Running   0          21s
+prometheus-kube-state-metrics-6df5d44568-bxqxn   1/1     Running   0          21s
+prometheus-node-exporter-7g9v9                   1/1     Running   0          22s
+prometheus-node-exporter-tjgd5                   1/1     Running   0          22s
+prometheus-pushgateway-79dd67b5-b5mjz            1/1     Running   0          21s
+prometheus-server-5574d6697f-kf7vg               1/2     Running   0          21s
+PS C:\Users\Administrator>
