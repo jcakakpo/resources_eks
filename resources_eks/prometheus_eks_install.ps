@@ -51,3 +51,19 @@ Get the PushGateway URL by running these commands in the same shell:
 For more information on running Prometheus, visit:
 https://prometheus.io/
 PS C:\Users\Administrator>
+PS C:\Users\Administrator> kubectl get pods --all-namespaces
+NAMESPACE     NAME                                             READY   STATUS    RESTARTS   AGE
+kube-system   aws-node-gws52                                   1/1     Running   0          5h38m
+kube-system   aws-node-wq94p                                   1/1     Running   0          5h38m
+kube-system   coredns-75b44cb5b4-m55bg                         1/1     Running   0          5h45m
+kube-system   coredns-75b44cb5b4-rb98l                         1/1     Running   0          5h45m
+kube-system   kube-proxy-9c57r                                 1/1     Running   0          5h38m
+kube-system   kube-proxy-cpnws                                 1/1     Running   0          5h38m
+kube-system   metrics-server-6648f5454b-cgdmt                  1/1     Running   0          16m
+prometheus    prometheus-alertmanager-78d778c999-xzszf         0/2     Pending   0          6m14s
+prometheus    prometheus-kube-state-metrics-6df5d44568-tks9p   0/1     Pending   0          6m14s
+prometheus    prometheus-node-exporter-8x4f2                   0/1     Pending   0          6m14s
+prometheus    prometheus-node-exporter-bgcvr                   0/1     Pending   0          6m14s
+prometheus    prometheus-pushgateway-79dd67b5-sh44h            0/1     Pending   0          6m14s
+prometheus    prometheus-server-5574d6697f-7cnqn               2/2     Running   0          6m14s
+PS C:\Users\Administrator>
